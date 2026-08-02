@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="package">
+
+	<property name="mdpc.rust.name"    value="strum"/>
+	<property name="mdpc.rust.version" value="0.28.0"/>
+	<property name="mdpc.bdep"
+			value="librust-strum-macros-dev (&gt;= 0.28.0)"/>
+
+	<!-- RUST AUTOCI -->
+	<property name="mdpc.debcargo" value="true"/>
+	<property name="mdpc.name" value="librust-${mdpc.rust.name}-dev"/>
+	<property name="mdpc.changelog.name" value="rust-${mdpc.rust.name}"/>
+	<property name="mdpc.changelog" value="${mdpc.rust.name}-overlay/changelog"/>
+	<target name="autoci" if="mdpc.internal.rust" depends="autopackage"/>
+
+	<!-- CONSTANT TPL IMPORT -->
+	<property environment="env"/>
+	<condition property="masysma.internal.includepath.rel" value="${env.MDVL_CI_PHOENIX_ROOT}" else=".."><isset property="env.MDVL_CI_PHOENIX_ROOT"/></condition>
+	<property name="masysma.internal.includepath" location="${masysma.internal.includepath.rel}"/>
+	<property name="masysma.internal.loadpath" value="${masysma.internal.includepath}/co-build/ant-build-template.xml"/>
+	<condition property="masysma.internal.load" value="file://${masysma.internal.loadpath}" else="https://raw.githubusercontent.com/m7a/co-build/master/ant-build-template.xml"><resourceexists><file file="${masysma.internal.loadpath}"/></resourceexists></condition>
+	<import><url url="${masysma.internal.load}"/></import>
+
+</project>

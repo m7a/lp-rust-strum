@@ -1,0 +1,72 @@
+rust-strum (0.28.0-1) unstable; urgency=medium
+
+  * Package strum 0.28.0 from crates.io using debcargo 2.8.3
+
+ -- Linux-Fan <info@masysma.net>  Sun, 14 Jun 2026 20:08:53 +0200
+
+rust-strum (0.26.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Package strum 0.26.3 from crates.io using debcargo 2.6.1
+  * Add Breaks on librust-just-dev (<< 1.35.0-1)
+
+ -- Julian Gilbey <jdg@debian.org>  Thu, 05 Sep 2024 21:15:21 +0100
+
+rust-strum (0.26.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package strum 0.26.3 from crates.io using debcargo 2.6.1
+
+ -- Julian Gilbey <jdg@debian.org>  Fri, 30 Aug 2024 06:16:42 +0100
+
+rust-strum (0.26.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package strum 0.26.2 from crates.io using debcargo 2.6.1
+
+ -- Blair Noctis <n@sail.ng>  Tue, 11 Jun 2024 08:34:41 +0000
+
+rust-strum (0.25.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package strum 0.25.0 from crates.io using debcargo 2.6.1 (Closes: #1051074)
+  * Reduce context in relax-dep.diff to avoid fuzz.
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 12 Dec 2023 20:56:45 +0000
+
+rust-strum (0.24.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Package strum 0.24.1 from crates.io using debcargo 2.6.0
+  * Bump phf dependency to 0.11
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 27 Jul 2023 04:45:39 +0000
+
+rust-strum (0.24.1-1) unstable; urgency=medium
+
+  * Package strum 0.24.1 from crates.io using debcargo 2.6.0
+
+  [ Blair Noctis ]
+  * Team upload.
+  * Package strum 0.24.1 from crates.io using debcargo 2.5.0 (Closes: #1013120)
+  * Removed patches as no longer needed
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 13 Jul 2023 01:02:10 +0000
+
+rust-strum (0.19.2-1) unstable; urgency=medium
+
+  * Package strum 0.19.2 from crates.io using debcargo 2.4.3
+
+ -- kpcyrd <git@rxv.cc>  Sun, 04 Oct 2020 15:51:56 +0200
+
+rust-strum (0.15.0-2) unstable; urgency=medium
+
+  * Source-only reupload for bullseye
+
+ -- kpcyrd <git@rxv.cc>  Fri, 19 Jul 2019 12:28:23 +0000
+
+rust-strum (0.15.0-1) unstable; urgency=medium
+
+  * Package strum 0.15.0 from crates.io using debcargo 2.2.10
+
+ -- kpcyrd <git@rxv.cc>  Mon, 20 May 2019 23:15:39 +0200
