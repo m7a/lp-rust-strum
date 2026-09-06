@@ -11,7 +11,7 @@
 	<property name="mdpc.name" value="librust-${mdpc.rust.name}-dev"/>
 	<property name="mdpc.changelog.name" value="rust-${mdpc.rust.name}"/>
 	<property name="mdpc.changelog" value="${mdpc.rust.name}-overlay/changelog"/>
-	<target name="autoci" if="mdpc.internal.rust" depends="autopackage"/>
+	<target if="mdpc.internal.rust" name="autoci" depends="autopackage"/>
 
 	<!-- CONSTANT TPL IMPORT -->
 	<property environment="env"/>
